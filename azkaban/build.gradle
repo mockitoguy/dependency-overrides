@@ -1,0 +1,27 @@
+plugins {
+    id "idea"
+    id "com.jfrog.bintray" version "1.8.5"
+}
+
+bintray {
+    user = 'szczepiq'
+    key = System.getenv("BINTRAY_API_KEY")
+    publish = true
+    override = true
+
+    filesSpec {
+        from 'resources/com'
+        into 'com' //preserving the exact folder structure
+    }
+
+    pkg {
+        userOrg = 'linkedin'
+        repo = 'dependency-overrides'
+        name = 'azkaban'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/azkaban/azkaban'
+        version {
+            name = "0.0.1"
+        }
+    }
+}

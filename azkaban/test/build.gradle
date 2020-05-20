@@ -1,0 +1,33 @@
+plugins {
+    id "idea"
+}
+
+configurations {
+    testing
+}
+
+dependencies {
+    testing "com.linkedin.azkaban:azkaban-common:3.58.0"
+}
+
+task reproduceFailure {
+    doLast {
+        repositories {
+            mavenCentral()
+        }
+        println "Resolved artifacts:"
+        configurations.testing.files.each { println it.name }
+    }
+}
+
+task test {
+    doLast {
+        repositories {
+            maven { url "https://linkedin.bintray.com/dependency-overrides/" }
+            mavenCentral()
+        }
+        println "Resolved artifacts:"
+        configurations.testing.files.each { println it.name }
+    }
+}
+

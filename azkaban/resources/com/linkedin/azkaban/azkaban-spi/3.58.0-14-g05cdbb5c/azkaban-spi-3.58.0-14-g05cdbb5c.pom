@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <groupId>com.linkedin.azkaban</groupId>
+    <artifactId>azkaban-spi</artifactId>
+    <version>3.58.0-14-g05cdbb5c</version>
+    <name>azkaban-spi</name>
+    <description>SauceCoreLibrary is a core lib of sauce. Other libraries must base on it.</description>
+    <url>https://github.com/azkaban/azkaban</url>
+    <inceptionYear>2018</inceptionYear>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>mockitoguy</id>
+            <name>Szczepan Faber</name>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git@github.com:azkaban/azkaban.git</connection>
+        <developerConnection>scm:git@github.com:azkaban/azkaban.git</developerConnection>
+        <url>https://github.com/azkaban/azkaban</url>
+    </scm>
+    <dependencies/>
+</project>
